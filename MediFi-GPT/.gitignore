@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.env
+
+# Output and temp data
+output/
+*.zip
+
+# RAG and embedding files
+genai/indexes/
+*.faiss
+*.pkl
+*.json
+*.index
+
+# Large data (medical books)
+data/books/
+data/papers/
+
+# Model files
+models/
+
+# OS/system junk
+.DS_Store
+Thumbs.db
+
