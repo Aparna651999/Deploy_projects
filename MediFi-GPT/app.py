@@ -1,14 +1,15 @@
 # app.py
+
 import sys
 import os
-sys.path.append(os.path.abspath("."))
+import re
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
 
 import streamlit as st
 from genai.llm_engine import generate_prompt_with_rag, stream_response
 from genai.quiz_gen import generate_quiz
 from genai.flashcards import generate_flashcards
 from genai.rag_engine import query_multi_index_rag
-
 
 # ------------------ Page Setup ------------------
 st.set_page_config(page_title="🧠 MediFi-GPT", layout="wide")
